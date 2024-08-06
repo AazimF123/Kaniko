@@ -39,7 +39,7 @@
    - after to create your kaniko–secret you use the following cmd:
      kubectl create secret generic kaniko-secret --from-file=config.json=./config.json
 
-    Summary:
+    Summary
 
     - The config.json file is needed to provide authentication credentials to your Docker registry.
     - Creating a Kubernetes secret to store this file securely allows Kaniko to build and push images without exposing sensitive information.
