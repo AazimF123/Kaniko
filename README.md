@@ -54,8 +54,9 @@
      ![image](https://github.com/user-attachments/assets/03c0ff87-f7cb-4e4a-89e2-cde391b97a62)
      ![image](https://github.com/user-attachments/assets/9dce7011-462f-4ceb-bc91-e7dc48be854b)
 
-     -- apply it: kubectl apply –f service-example.yaml
-     -- apply it: kubectl apply –f rolebinding-example.yaml
+     - apply it: kubectl apply –f service-example.yaml
+   
+     - apply it: kubectl apply –f rolebinding-example.yaml
 
 7. create a Dockerfile and application code (app.py) and requirements.txt to list the dependencies needed.
 
