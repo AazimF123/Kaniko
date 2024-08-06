@@ -14,6 +14,8 @@
     
      - use this link for help - https://github.com/sglvt/k8s-kaniko-jenkins/blob/master/values.yaml
        for this example I changed the pod template to create a kaniko pod template:
+       ![image](https://github.com/user-attachments/assets/3d55c5bb-d878-4d9b-befe-1c56e837cf16)
+
        To apply your changes: helm upgrade <RELEASE_NAME> <CHART_NAME> --values /path/to/values.yaml
 
 
