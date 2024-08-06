@@ -36,13 +36,14 @@
 
 
    - you can get your Docker registory credentials auth by: echo -n 'myuser:mypassword' | base64  
-   - after to create your kaniko–secret you use the following cmd:  kubectl create secret generic kaniko-secret --from-file=config.json=./config.json
+   - after to create your kaniko–secret you use the following cmd:
+     kubectl create secret generic kaniko-secret --from-file=config.json=./config.json
 
 Summary:
 
-    • The config.json file is needed to provide authentication credentials to your Docker registry.
-    • Creating a Kubernetes secret to store this file securely allows Kaniko to build and push images without exposing sensitive information.
-    • This approach enhances security and integrates well with Kubernetes' native secret management.
+    - The config.json file is needed to provide authentication credentials to your Docker registry.
+    - Creating a Kubernetes secret to store this file securely allows Kaniko to build and push images without exposing sensitive information.
+    - This approach enhances security and integrates well with Kubernetes' native secret management.
     for more information use this link for help: https://medium.com/geekculture/deploying-docker-registry-on-kubernetes-3319622b8f32
 
 
