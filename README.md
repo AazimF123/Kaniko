@@ -1,4 +1,4 @@
-# Kaniko
+# Deploying Kaniko on k8s in a Local Docker Registry 
  1. step 1: download jenkins using helm:
     
      - helm install jenkins jenkins/jenkins
