@@ -9,11 +9,11 @@
   
         - helm show values jenkins/jenkins > jenkins-new-values.yaml
     
-  Step3: edit the values file:
+  Step 3: edit the values file:
   
         - Use this link for help - https://github.com/sglvt/k8s-kaniko-jenkins/blob/master/values.yaml
         - For this example I changed the pod template to create a kaniko pod template:
-         ![image](https://github.com/user-attachments/assets/f8b7f92f-6814-4e75-acc3-90a313d36c9e)
+  ![image](https://github.com/user-attachments/assets/f8b7f92f-6814-4e75-acc3-90a313d36c9e)
 
         - To apply your changes: helm upgrade <RELEASE_NAME> <CHART_NAME> --values /path/to/values.yaml
 
@@ -21,11 +21,12 @@
 
 
 
-    4. Step4: create a local registry and kaniko secret (adjust the permission of the file accordingly for all yaml files):
-- Docker_Registry_deployment.yaml:
+  Step 4: Create a local registry and kaniko secret (adjust the permission of the file accordingly for all yaml files):
+
+        - Docker_Registry_deployment.yaml:
 
 
-- Registory-service.yaml
+        - Registory-service.yaml
 
 
  - create a config.JSON file to access docker registory:
