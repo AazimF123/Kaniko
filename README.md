@@ -27,17 +27,17 @@
    ![image](https://github.com/user-attachments/assets/21131207-5d95-4582-b459-b67baef4f5f3)
 
 
-        - Registory-service.yaml
+        - Registory-service.yaml:
    ![image](https://github.com/user-attachments/assets/f78c7876-3047-4987-99b0-97fbdc97e876)
 
 
         - create a config.JSON file to access docker registory:
    ![image](https://github.com/user-attachments/assets/806e878b-bff5-43b4-a5b4-c5205ab028af)
 
-
-
       
-- create kaniko-pod.yaml
+        - create kaniko-pod.yaml:
+   ![image](https://github.com/user-attachments/assets/e6d1a541-46cd-4b31-a44b-b0073679096e)
+
 you can get you auth by: echo -n 'myuser:mypassword' | base64  : after to create your kaniko – secret you use the following cmd:  kubectl create secret generic kaniko-secret --from-file=config.json=./config.json
 
 Summary:
