@@ -1,7 +1,8 @@
   Step 1: download jenkins using helm:
           
-        - helm install jenkins jenkins/jenkins
-        - default username: admin 
+        helm install jenkins jenkins/jenkins
+        
+        default username: admin 
         - default password is given by applying this cmd line: 
           printf $(kubectl get secret --namespace default jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 –decode);echo
 
