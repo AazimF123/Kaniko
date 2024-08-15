@@ -24,12 +24,15 @@
   Step 4: Create a local registry and kaniko secret (adjust the permission of the file accordingly for all yaml files):
 
         - Docker_Registry_deployment.yaml:
+   ![image](https://github.com/user-attachments/assets/21131207-5d95-4582-b459-b67baef4f5f3)
 
 
         - Registory-service.yaml
+   ![image](https://github.com/user-attachments/assets/f78c7876-3047-4987-99b0-97fbdc97e876)
 
 
- - create a config.JSON file to access docker registory:
+        - create a config.JSON file to access docker registory:
+   ![image](https://github.com/user-attachments/assets/806e878b-bff5-43b4-a5b4-c5205ab028af)
 
 
 
