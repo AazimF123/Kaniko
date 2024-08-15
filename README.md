@@ -1,8 +1,7 @@
   Step 1: download jenkins using helm:
           
-        helm install jenkins jenkins/jenkins
-        
-        default username: admin 
+        - helm install jenkins jenkins/jenkins
+        - default username: admin 
         - default password is given by applying this cmd line: 
           printf $(kubectl get secret --namespace default jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 –decode);echo
 
@@ -42,26 +41,24 @@
 
         - To create kaniko-secret:  kubectl create secret generic kaniko-secret --from-file=config.json=./config.json
 
-Summary:
+  Summary:
 
-    • The config.json file is needed to provide authentication credentials to your Docker registry.
-    • Creating a Kubernetes secret to store this file securely allows Kaniko to build and push images without exposing sensitive information.
-    • This approach enhances security and integrates well with Kubernetes' native secret management.
-    for more information use this link for help: https://medium.com/geekculture/deploying-docker-registry-on-kubernetes-3319622b8f32
-
-
+        • The config.json file is needed to provide authentication credentials to your Docker registry.
+        • Creating a Kubernetes secret to store this file securely allows Kaniko to build and push images without exposing sensitive information.
+        • This approach enhances security and integrates well with Kubernetes' native secret management.
+          for more information use this link for help: https://medium.com/geekculture/deploying-docker-registry-on-kubernetes-3319622b8f32
 
 
 
+  Step 5: create service account yaml file and role binding yaml file:
 
-
-
-
-    5. Step5: create service account yaml file and role binding yaml file:
-
--- apply it: kubectl apply –f service-example.yaml
--- apply it: kubectl apply –f rolebinding-example.yaml
-    6. create a Dockerfile and application code (app.py) and requirements.txt to list the dependencies needed.
+   ![image](https://github.com/user-attachments/assets/2ae7b64a-26ef-4dde-9730-344e716a4c62)
+   ![image](https://github.com/user-attachments/assets/28fe40db-9e55-4b92-8dd7-2b104d5f6f8a)
+   
+       - apply it: kubectl apply –f service-example.yaml
+       - apply it: kubectl apply –f rolebinding-example.yaml
+       
+  Step  6. create a Dockerfile and application code (app.py) and requirements.txt to list the dependencies needed.
 
 
 
