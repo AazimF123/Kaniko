@@ -33,6 +33,7 @@
 
         - create a config.JSON file to access docker registory:
    ![image](https://github.com/user-attachments/assets/806e878b-bff5-43b4-a5b4-c5205ab028af)
+       
         - you can get you auth by: echo -n 'myuser:mypassword' | base64  
       
         - create kaniko-secret.yaml:
